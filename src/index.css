@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Playfair+Display:wght@400..900&display=swap");
+
+:root {
+  --app-width: 1400px;
+  --header-width: 600px;
+  --form-width: 400px;
+
+  --white-color: #fff;
+  --black-color: #000;
+
+  --first-color: #e63946;
+  --border-input-color: #ecedec;
+
+  --title-color: #fffdf8;
+  --text-color: #a8a8a8;
+  --first-text-color: #494949;
+
+  --body-color: #ffffff;
+  --background-color: #242424;
+  --detail-color: #2e2e2e;
+
+  --default-font-family: "Inter", sans-serif;
+  --first-font-family: "Playfair Display", serif;
+
+  --xs-font-size: 12px;
+  --sm-font-size: 14px;
+  --md-font-size: 16px;
+  --bg-font-size: 18px;
+  --xl-font-size: 20px;
+  --xl2-font-size: 24px;
+  --xl3-font-size: 26px;
+  --xl4-font-size: 28px;
+  --xl5-font-size: 30px;
+  --xl6-font-size: 36px;
+  --xl7-font-size: 48px;
+
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+
+  --default-border-radius: 15px;
+  --first-border-radius: 10px;
+  --second-border-radius: 50px;
+
+  --default-border-solid: 1.5px solid;
+
+  --default-gap: 10px;
+  --first-gap: 30px;
+  --second-gap: 5px;
+
+  --default-transition: 0.3s ease-in-out;
+  --default-transform: translateY(-3px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--default-font-family);
+}
+
+body {
+  background: var(--body-color);
+  overflow: hidden;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}

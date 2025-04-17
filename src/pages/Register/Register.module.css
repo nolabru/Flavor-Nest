@@ -1,0 +1,153 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  padding: 0 24px;
+}
+
+.register_default_image {
+  position: absolute;
+  max-width: 500px;
+}
+
+.register_left {
+  left: 0;
+  bottom: 0;
+}
+
+.register_right {
+  right: 0;
+  top: 0;
+}
+
+.register_container {
+  max-width: var(--form-width);
+  padding: 24px;
+  background: var(--white-color);
+  border-radius: var(--default-border-radius);
+  box-shadow: 0 1px 5px 1px #0000000e;
+}
+
+.register_header {
+  text-align: center;
+}
+
+.register_title {
+  font-family: var(--first-font-family);
+  font-size: var(--xl3-font-size);
+  color: var(--first-color);
+}
+
+.register_description {
+  margin: 15px 0 25px;
+  font-size: var(--sm-font-size);
+  color: var(--text-color);
+}
+
+.register_form {
+  margin-top: 20px;
+}
+
+.register_default_label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.register_default_label_span {
+  margin-bottom: 5px;
+  font-size: var(--sm-font-size);
+  font-weight: var(--medium);
+  color: var(--detail-color);
+}
+
+.input_container {
+  position: relative;
+}
+
+.register_default_input {
+  width: 100%;
+  padding: 15px 0 15px 40px;
+  border: var(--default-border-solid) var(--border-input-color);
+  border-radius: var(--first-border-radius);
+  color: var(--detail-color);
+  transition: var(--default-transition);
+}
+
+.register_default_input:focus {
+  border: var(--default-border-solid) var(--first-color);
+}
+
+.register_default_input::placeholder {
+  color: var(--text-color);
+}
+
+.input_icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  padding-top: 2px;
+  transform: translate(0, -50%);
+  color: var(--text-color);
+  transition: var(--default-transition);
+}
+
+.input_container:focus-within .input_icon {
+  color: var(--first-color);
+  transform: translate(-1px, -50%);
+}
+
+.register_button {
+  display: flex;
+  justify-content: center;
+  gap: var(--default-gap);
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px 24px;
+  border: 1.5px solid #00000000;
+  border-radius: var(--first-border-radius);
+  background: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--bold);
+  cursor: pointer;
+  transition: var(--default-transition);
+}
+
+.register_button:hover {
+  background: var(--white-color);
+  color: var(--first-color);
+  border: var(--default-border-solid) var(--first-color);
+}
+
+.arrow_icon {
+  padding-top: 2.5px;
+  transition: transform var(--default-transition);
+}
+
+.register_button:hover .arrow_icon {
+  transform: translateX(4px);
+}
+
+@media (max-width: 1400px) {
+  .register_left {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .register_left {
+    left: -90px;
+  }
+
+  .register_right {
+    right: -100px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .register_default_image {
+    display: none;
+  }
+}

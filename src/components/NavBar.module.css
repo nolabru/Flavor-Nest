@@ -1,0 +1,47 @@
+.header {
+  height: 70px;
+}
+
+.nav_bar {
+  max-width: var(--header-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+}
+
+.logo_recipes {
+  display: flex;
+  align-items: center;
+  gap: var(--default-gap);
+  font-size: var(--xl2-font-size);
+  font-weight: var(--semibold);
+  font-family: var(--first-font-family);
+  color: var(--first-text-color);
+}
+
+.icon_recipes {
+  padding-top: 2.8px;
+  font-size: var(--xl2-font-size);
+  color: var(--first-color);
+}
+
+.nav_links_items {
+  display: flex;
+  gap: var(--second-gap);
+}
+
+.nav_link {
+  color: var(--first-text-color);
+  font-size: var(--sm-font-size);
+  font-weight: var(--semibold);
+  transition: var(--default-transition);
+  padding: 8px 20px;
+  border-radius: var(--second-border-radius);
+}
+
+.nav_link:hover,
+.active {
+  color: var(--first-color);
+}
