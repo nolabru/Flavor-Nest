@@ -11,6 +11,8 @@
   --first-color: #e63946;
   --border-input-color: #ecedec;
 
+  --confirm-color: #60a13b;
+
   --title-color: #fffdf8;
   --text-color: #a8a8a8;
   --first-text-color: #494949;
@@ -71,4 +73,19 @@ body {
 input:focus,
 textarea:focus {
   outline: none;
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+  font-size: var(--sm-font-size);
+  transition: var(--default-transition);
+}
+
+.success {
+  color: var(--confirm-color);
+}
+
+.error {
+  color: var(--first-color);
 }
